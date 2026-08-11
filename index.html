@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анонимный опрос</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Анонимный опрос</h1>
+
+<div id="questionBox">
+
+<h2 id="question">
+Вам уже исполнилось 18 лет?
+</h2>
+
+<div id="answers">
+
+<button onclick="answer18(true)">
+Да, мне 18+</button>
+
+<button onclick="answer18(false)">
+Нет, мне нет 18</button>
+
+</div>
+
+</div>
+
+<p id="status"></p>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
