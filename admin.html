@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Survey CMS</title>
+
+<style>
+
+body{
+
+font-family:Arial;
+background:#f4f4f4;
+margin:0;
+padding:30px;
+
+}
+
+.container{
+
+max-width:700px;
+margin:auto;
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+input,
+select,
+textarea{
+
+width:100%;
+
+padding:12px;
+
+margin-top:10px;
+
+margin-bottom:20px;
+
+font-size:16px;
+
+box-sizing:border-box;
+
+}
+
+button{
+
+background:#2e7d32;
+
+color:white;
+
+border:none;
+
+padding:15px;
+
+font-size:18px;
+
+cursor:pointer;
+
+width:100%;
+
+border-radius:8px;
+
+}
+
+button:hover{
+
+background:#1b5e20;
+
+}
+
+h1{
+
+text-align:center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Survey CMS</h1>
+
+<label>Текст вопроса</label>
+
+<input
+id="question"
+placeholder="Введите вопрос">
+
+<label>Тип вопроса</label>
+
+<select id="type">
+
+<option value="buttons">
+Один вариант ответа
+</option>
+
+<option value="text">
+Текстовый ответ
+</option>
+
+</select>
+
+<label>Варианты ответа</label>
+
+<textarea
+id="answers"
+rows="6"
+placeholder="Каждый вариант с новой строки
+
+Например:
+
+Мужчина
+Женщина"></textarea>
+
+<button onclick="saveQuestion()">
+
+Сохранить вопрос
+
+</button>
+
+<br><br>
+
+<div id="status"></div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+</html>
